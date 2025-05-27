@@ -114,6 +114,7 @@ class Baracca:
             elif self.type.lower() in ("base", "pcloud"):
                 for i, path in enumerate(self.imgs_path):
                     img = cv2.imread(path, 2)
+                    print("Available keys:", self.skeletons[i].keys())
                     kpt = self.skeletons[i][path[len(self.data_path)+1:].replace('Depth', 'IR')][0].copy()
                     for num, el in enumerate(kpt):
                         if (el[0] < 0 or el[1] < 0) or (el[0] == 0 and el[1] == 0):
