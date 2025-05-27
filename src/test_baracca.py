@@ -203,7 +203,8 @@ class PoseTest(object):
         if self.configer.get("save_pkl") is True and self.configer.get("from_gt") is False:
             save_name = self.configer.get("checkpoints", "save_name")
             with open(os.path.join("predictions", f"{save_name}_new.pkl"), "wb") as outfile:
-                print(f"saving results to {os.path.join("predictions", f"{save_name}_new.pkl")}")
+                path = os.path.join("predictions", f"{save_name}_new.pkl")
+                print(f"saving results to {path)}")
                 pickle.dump(self.kpts_dict, outfile, protocol=pickle.HIGHEST_PROTOCOL)
         print("Done in {}s".format(time.time() - start))
 
