@@ -10,13 +10,13 @@ import time
 from torch.utils.data import DataLoader
 
 # Import Datasets
-from src.Datasets.Baracca import Baracca
+from Datasets.Baracca import Baracca
 
 # Import Model
-from src.models.refinement import LinearModel
-from src.models.refine_patch_2d import Patch_2D_Model
-from src.models.pointnet import PointPatch
-from src.models.module_utilizer import ModuleUtilizer
+from models.refinement import LinearModel
+from models.refine_patch_2d import Patch_2D_Model
+from models.pointnet import PointPatch
+from models.module_utilizer import ModuleUtilizer
 
 # Import Utils
 from tqdm import tqdm

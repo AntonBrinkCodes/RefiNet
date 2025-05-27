@@ -8,31 +8,31 @@ import torchvision
 from torch.utils.data import DataLoader
 
 # Import Datasets
-from src.Datasets.ITOP import ITOP
-from src.Datasets.transforms import Compose, GaussianNoise
+from Datasets.ITOP import ITOP
+from Datasets.transforms import Compose, GaussianNoise
 
 # Import Model
-from src.models.refinement import LinearModel
-from src.models.refine_patch_2d import Patch_2D_Model
-from src.models.pointnet import PointPatch
-from src.models.module_utilizer import ModuleUtilizer
+from models.refinement import LinearModel
+from models.refine_patch_2d import Patch_2D_Model
+from models.pointnet import PointPatch
+from models.module_utilizer import ModuleUtilizer
 from torch.optim.lr_scheduler import MultiStepLR
 
 # Import loss
-from src.utils.loss import vitruvian_loss, mse_masked, forcing_loss
+from utils.loss import vitruvian_loss, mse_masked, forcing_loss
 
 # Import Utils
 import h5py
 import scipy.io
 from tensorboardX import SummaryWriter
-from src.utils.average_meter import AverageMeter
+from utils.average_meter import AverageMeter
 from tqdm import tqdm
-from src.utils.normalization import MEAN_itop, STD_itop, MEAN_patch_depth, STD_patch_depth
-from src.utils.utils_3d import depth_to_world, world_to_depth
-from src.utils.visualization import point_on_image
+from utils.normalization import MEAN_itop, STD_itop, MEAN_patch_depth, STD_patch_depth
+from utils.utils_3d import depth_to_world, world_to_depth
+from utils.visualization import point_on_image
 
 # Import Metrics
-from src.utils.metrics import OKS, Metric_ITOP
+from utils.metrics import OKS, Metric_ITOP
 
 
 # Setting seeds

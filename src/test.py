@@ -9,24 +9,24 @@ import time
 from torch.utils.data import DataLoader
 
 # Import Datasets
-from src.Datasets.ITOP import ITOP
+from Datasets.ITOP import ITOP
 
 # Import Model
-from src.models.refinement import LinearModel
-from src.models.refine_patch_2d import Patch_2D_Model
-from src.models.pointnet import PointPatch
-from src.models.module_utilizer import ModuleUtilizer
+from models.refinement import LinearModel
+from models.refine_patch_2d import Patch_2D_Model
+from models.pointnet import PointPatch
+from models.module_utilizer import ModuleUtilizer
 
 # Import Utils
 from tqdm import tqdm
 import h5py
-from src.utils.normalization import MEAN_itop, STD_itop, MEAN_patch_depth, STD_patch_depth
-from src.utils.utils_3d import depth_to_world, world_to_depth
-from src.utils.visualization import point_on_image
+from utils.normalization import MEAN_itop, STD_itop, MEAN_patch_depth, STD_patch_depth
+from utils.utils_3d import depth_to_world, world_to_depth
+from utils.visualization import point_on_image
 
 # Import Metrics
-from src.utils.metrics import OKS, Metric_ITOP
-from src.utils.visualization import plot_2D_3D
+from utils.metrics import OKS, Metric_ITOP
+from utils.visualization import plot_2D_3D
 
 import matplotlib
 matplotlib.use('Agg')

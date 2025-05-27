@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import torch
-from src.utils import utils_v2v
+from utils import utils_v2v
 
 def normals(depthmap, normalize=True, keep_dims=True):
     """Calculate depth normals as normals = gF(x,y,z) = (-dF/dx, -dF/dy, 1)
