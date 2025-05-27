@@ -202,6 +202,8 @@ class PoseTest(object):
         self.__test()
         if self.configer.get("save_pkl") is True and self.configer.get("from_gt") is False:
             save_name = self.configer.get("checkpoints", "save_name")
+            path = os.path.join("predictions", f"{save_name}_new.pkl")
+            print(f"path is: {path}")
             with open(os.path.join("predictions", f"{save_name}_new.pkl"), "wb") as outfile:
                 path = os.path.join("predictions", f"{save_name}_new.pkl")
                 print(f"saving results to {path}")
