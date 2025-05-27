@@ -204,7 +204,7 @@ class PoseTest(object):
             save_name = self.configer.get("checkpoints", "save_name")
             with open(os.path.join("predictions", f"{save_name}_new.pkl"), "wb") as outfile:
                 path = os.path.join("predictions", f"{save_name}_new.pkl")
-                print(f"saving results to {path)}")
+                print(f"saving results to {path}")
                 pickle.dump(self.kpts_dict, outfile, protocol=pickle.HIGHEST_PROTOCOL)
         print("Done in {}s".format(time.time() - start))
 
