@@ -5,9 +5,9 @@ from torch.utils.data import Dataset
 import h5py
 import pickle
 import numpy as np
-from src.utils.utils_3d import pointcloud_normalization, world_to_depth, zaxis_to_world_np, depth_to_world
-from src.utils.normalization import MEAN_itop as mean_base, STD_itop as std_base
-from src.utils.normalization import MEAN_patch_depth as mean_depth_patch, STD_patch_depth as std_depth_patch
+from utils.utils_3d import pointcloud_normalization, world_to_depth, zaxis_to_world_np, depth_to_world
+from utils.normalization import MEAN_itop as mean_base, STD_itop as std_base
+from utils.normalization import MEAN_patch_depth as mean_depth_patch, STD_patch_depth as std_depth_patch
 
 class ITOP(Dataset):
     """ITOP Dataset class
