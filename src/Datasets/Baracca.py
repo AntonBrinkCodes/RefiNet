@@ -3,9 +3,9 @@ import numpy as np
 import os
 import cv2
 
-from src.utils.normalization import MEAN_itop as mean_base, STD_itop as std_base
-from src.utils import utils_v2v, utils_3d
-from src.utils.utils_3d import pointcloud_normalization
+from utils.normalization import MEAN_itop as mean_base, STD_itop as std_base
+from utils import utils_v2v, utils_3d
+from utils.utils_3d import pointcloud_normalization
 
 POSE_TO_ITOP = [0, 1, 2, 5, 3, 6, 4, 7, 8, 9, 12, 10, 13, 11, 14]
 MEAN = [
