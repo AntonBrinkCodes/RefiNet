@@ -196,7 +196,7 @@ class PoseTest(object):
                     self.img_saved += ids.shape[0]
 
     def test(self):
-        print("Starting test procedure.")
+        print("Starting test procedure test baracca.")
         start = time.time()
         self.kpts_dict = np.zeros((2400, 15, self.configer["data", "input_size"][-1]))
         self.__test()
