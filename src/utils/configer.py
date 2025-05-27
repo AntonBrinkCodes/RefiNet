@@ -18,7 +18,7 @@ class Configer(object):
         """
         self.args = args.__dict__
         self.params = None
-
+        print(f"current workdir is: {os.getcwd()}")
         if not os.path.exists(args.hypes):
             raise ValueError('Json Path: {} not exists!'.format(args.hypes))
 

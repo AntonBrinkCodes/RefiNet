@@ -1,9 +1,9 @@
 import argparse
 
-from src.train import PoseRefine as Refine
-from src.test import PoseTest as Test
-from src.test_baracca import PoseTest as Test_baracca
-from src.utils.configer import Configer
+from train import PoseRefine as Refine
+from test import PoseTest as Test
+from test_baracca import PoseTest as Test_baracca
+from utils.configer import Configer
 
 import random
 import numpy as np
