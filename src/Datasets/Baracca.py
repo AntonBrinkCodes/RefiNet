@@ -108,10 +108,10 @@ class Baracca:
                         n = str(k).zfill(3)
                         self.imgs_path.append(os.path.join(self.data_path, subj, seq, f"imgDepth_{subj}_{seq}_{n}.png"))
                         skel_data = np.load(os.path.join(self.data_path, subj, seq, f"hrnet_w48_384x288_with_yolo.pkl"), allow_pickle=True)['IR']
-                        #skel_data_fixed = {k.replace('\\', '/'): v for k, v in skel_data.items()}
+                        skel_data_fixed = {k.replace('\\', '/'): v for k, v in skel_data.items()}
                         #skel_data_fixed = {k.lstrip('/'): v for k, v in skel_data_fixed.items()}
 
-                        self.skeletons.append(skel_data)
+                        self.skeletons.append(skel_data_fixed)
             if self.type.lower() == "depth":
                 pass
             elif self.type.lower() in ("base", "pcloud"):
