@@ -12,7 +12,7 @@
       "kpts_type": "3D",
       "patch_dim": 40,
       "from_gt": false,
-      "kpts_path_test": "/home/anton/refinet/RefiNet/src/models/baseline_keypoints/kpts_test.pkl",
+      "kpts_path_test": "/home/anton/refinet/RefiNet/src/dataBarracuda/viewpoints.pkl",
       "batch_size": 64,
       "input_size": [15, 2],
       "output_size": [15, 2],
@@ -23,7 +23,7 @@
     "metrics": {
       "sigmas": 0.107,
       "gt_type": "plain",
-      "kpts_type": "3D",
+      "kpts_type": "3D", 
       "dist_thresh": 100
     },
     "data_aug": {
