@@ -192,6 +192,7 @@ class PoseTest(object):
                 # Saving images
                 if self.configer.get("save_img") is True:
                     name = self.configer.get("data", "type")
+                    print(f"kpts_pred shape: {kpts_pred.shape}")
                     self.save_images(ids, kpts_pred, kpts_in, visible, f"predictions/imgs/{name}")
                     self.img_saved += ids.shape[0]
 
