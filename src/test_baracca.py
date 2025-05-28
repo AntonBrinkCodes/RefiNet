@@ -184,6 +184,7 @@ class PoseTest(object):
                         or (self.type.lower() == "base" and self.configer.get("offset") is True):
                     kpts_off = output.cpu().detach().numpy().astype(np.float32)
                     kpts_pred = kpts_in + kpts_off
+                    print(kpts_off)
                 else:
                     kpts_pred = output.cpu().detach().numpy().astype(np.float32)
 

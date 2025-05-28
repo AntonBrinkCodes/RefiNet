@@ -14,8 +14,8 @@
       "from_gt": false,
       "kpts_path_test": "/home/anton/refinet/RefiNet/src/dataBarracuda/",
       "batch_size": 64,
-      "input_size": [15, 3],
-      "output_size": [15, 3],
+      "input_size": [15, 2],
+      "output_size": [15, 2],
       "image_size": [240, 320],
       "num_keypoints": 15,
       "result_dir": "./result"
