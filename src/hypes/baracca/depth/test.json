@@ -9,10 +9,10 @@
     "epochs": 100,
     "data": {
       "type": "depth",
-      "kpts_type": "3D",
+      "kpts_type": "2D",
       "patch_dim": 40,
       "from_gt": false,
-      "kpts_path_test": "/home/anton/refinet/RefiNet/src/dataBarracuda/",
+      "kpts_path_test": "/home/anton/refinet/RefiNet/src/models/baseline_keypoints/kpts_test.pkl",
       "batch_size": 64,
       "input_size": [15, 2],
       "output_size": [15, 2],

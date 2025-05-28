@@ -4,7 +4,7 @@
     "side": "side",
     "task": "Pose Estimation",
     "project_dir": "/home/anton/refinet/RefiNet/src",
-    "train_dir": "/home/anton/refinet/RefiNet/src/dataBarracuda/",
+    "train_dir": "/home/anton/refinet/RefiNet/src/dataBarracuda",
     "save_img": true,
     "epochs": 50,
     "data": {
