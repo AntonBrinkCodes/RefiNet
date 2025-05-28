@@ -23,7 +23,7 @@
     "metrics": {
       "sigmas": 0.107,
       "gt_type": "plain",
-      "kpts_type": "2D",
+      "kpts_type": "3D",
       "dist_thresh": 100
     },
     "data_aug": {
